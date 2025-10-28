@@ -109,23 +109,7 @@ export default function Home() {
           )}
         </div>
       </section>
-      <div className="flex flex-col ml-10">
-        {subjects.map((subject, index) => (
-          <div className="flex" key={index}>
-            <div
-              className={`relative before:absolute before:left-1/2 before:top-[15px] before:h-2.5 before:w-2.5 before:-translate-x-1/2 before:rounded-full before:border-2 before:border-primary ${
-                index !== subjects.length - 1 &&
-                "after:absolute after:left-1/2 after:top-[25px] after:-bottom-[15px] after:h-auto after:w-0 after:-translate-x-1/2  after:border-l-2 after:border-primary"
-              }`}
-            ></div>
-            <div className="self-center p-2.5 ltr:ml-2.5 rtl:ml-2.5 rtl:ltr:mr-2.5">
-              <p className="text-sm text-[#3b3f5c] dark:text-white-light">
-                {subject}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
+      
       <NewsLetter />
     </div>
   );
